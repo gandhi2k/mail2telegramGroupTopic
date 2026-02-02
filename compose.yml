@@ -1,0 +1,9 @@
+services:
+  mail2tgbot:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: mail2tgbot
+    env_file:
+        - .env # create according to ReadMe!
+    restart: always
